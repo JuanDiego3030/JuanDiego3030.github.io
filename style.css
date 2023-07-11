@@ -1,0 +1,193 @@
+body {
+  scroll-behavior: smooth;
+}
+
+/* Animacion de los titulos de secciones */
+@keyframes grow {
+
+  50% {
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    font-size: 50px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+  }
+}
+
+h1.grow-animation {
+  animation-name: grow;
+  animation-duration: 0.5s; 
+  animation-fill-mode: forwards; 
+}
+
+/* Animacion para las imagenes de las secciones */
+img.my-image{
+    width: 400px ;
+}
+    /* Estilos generales */
+    .my-image {
+      transition: transform 0.3s ease-in-out;
+      border: 1px solid #ccc;
+    }
+    
+    /* Estilos al pasar el ratón por encima */
+    .my-image:hover {
+      transform: scale(1.1);
+      border-width: 3px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+    
+    /* Estilos para el marco de las imágenes */
+    #Yamaha .my-image {
+      border-color: rgb(0, 42, 255);
+    }
+    
+    #Suzuki .my-image {
+      border-color: yellow;
+    }
+    
+    #Honda .my-image {
+      border-color: red;
+    }
+    
+    #Kawasaki .my-image {
+      border-color: green;
+    }
+
+/* Contenido de la pagina */
+.container{
+    max-width: 1000px;
+}
+.texto-blanco {
+    color: rgb(247, 243, 243);
+  }
+#UBA{
+    width: 100px ;
+}
+#logo{
+    width: 50px ;
+}
+
+/* Contenido de el slider */
+.container-slider{
+    width: 100%;
+    max-width: 700px ;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  
+  }
+  .slider{
+    display: flex;
+    width: 400%;
+    height: 400px;
+    margin-left: -100%;
+  }
+  .slider__section{
+    width: 100% ;
+  
+  }
+  .slider__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .slider__btn{
+    position:absolute;
+    height: 30px;
+    width: 30px;
+    background: rgba(84, 84, 84, 0.7);
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    
+    border-radius: 50%;
+    cursor: pointer;
+  
+  }
+  .slider__btn:hover{
+    background-color: #000000;
+  
+  }
+  .slider__btn--left{
+    left: 10px;
+  
+  }
+  .slider__btn--right{
+    right: 10px;
+  }
+
+  .mensaje-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 20px;
+    z-index: 9999;
+    animation-name: mensajeEntrada;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    visibility: hidden;
+
+  }
+  
+  @keyframes mensajeEntrada {
+    0% {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.5);
+      visibility: hidden;
+    }
+    50% {
+      opacity: 1;
+      visibility: visible;
+    }
+    100% {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+      visibility: visible;
+    }
+  }
+  
+  .oculto {
+    display: none;
+  }
+
+  #mensaje-popup{
+    width: 200px ;
+    border-radius: 10px;
+  }
+  .moto-container {
+    
+    position: relative;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#Empezar {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+
+
+

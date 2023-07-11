@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="imagenes/LOGO 2.png" type="image/png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cross Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="juego.css">
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg fixed-top">
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <img src="./imagenes/LOGO 2.png" alt="logo" id="logo">
+                <a href="#" class="navbar-brand">
+                    <h2 class="fw-bold texto-blanco ms-3">Japanese Performance Cross</h2>
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#lista">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="lista">
+                <div class="navbar-nav">
+                    <a href="index.html" class="nav-link">regresar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <div class="contenedor">
+
+        <div class="suelo"></div>
+        
+        <div class="moto"></div>
+    
+        <div class="score">0</div>
+    
+    </div>
+    
+    <div class="game-over"><a href="#" onclick="location.reload();" class="btn btn-danger">Reintentar</a></div>
+    <script src="juego.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
